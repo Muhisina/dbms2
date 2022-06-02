@@ -1,0 +1,34 @@
+prog 22:Program to create users and roles
+
+Solution 22:
+> db.createUser({user:"sam",pwd:"password",roles:[{role:"userAdmin",db:"employee"}]})
+
+> db.createUser({user:"sam",pwd:"password",roles:[{role:"userAdmin",db:"employee
+"}]})
+Successfully added user: {
+        "user" : "sam",
+        "roles" : [
+                {
+                        "role" : "userAdmin",
+                        "db" : "employee"
+                }
+        ]
+}
+
+> db.createUser({user:"mohan",pwd:"pass",roles:[{role:"read",db:"marketing"},{ro
+le:"readWrite",db:"Sales"}]})
+Successfully added user: {
+        "user" : "mohan",
+        "roles" : [
+                {
+                        "role" : "read",
+                        "db" : "marketing"
+                },
+                {
+                        "role" : "readWrite",
+                        "db" : "Sales"
+                }
+        ]
+}
+>
+
